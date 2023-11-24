@@ -1,0 +1,136 @@
+.header {
+  background-color: #131923;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 0 4px;
+  z-index: 100;
+}
+.header__logo {
+  width: 70px;
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.header__Location--icon {
+  font-size: 0.7rem !important;
+}
+.header__select--container {
+  height: 100%;
+  min-width: 10%;
+
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  background-color: #e6e6e6;
+  padding: 5px;
+  color: #767676;
+  cursor: pointer;
+  appearance: none;
+  overflow: none;
+
+  display: flex;
+  place-content: center;
+}
+.header__select--container::after {
+  content: "";
+  width: 0.5em;
+  height: 0.3em;
+  background-color: #111;
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+.header__select {
+  width: 100%;
+  font-weight: 600;
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 0.4rem;
+}
+
+.header__search {
+  display: flex;
+  flex: 1;
+  height: 25px;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.header__searchInput--container {
+  width: 100%;
+  flex-grow: 1;
+}
+.header__searchInput {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.7rem;
+  font-weight: 600;
+  height: 100%;
+  outline: none;
+  border: none;
+  width: 80%;
+  padding: 4px 10px;
+}
+.header__searchInput::placeholder {
+  font-size: 13px;
+  text-indent: 8px;
+  position: absolute;
+  top: 6px;
+  left: 4px;
+}
+.header__searchIcon {
+  background-color: #cd9042;
+  height: 100% !important;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header__Link {
+  color: #fff;
+  text-decoration: none;
+}
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.header__option--span {
+  display: flex;
+  flex-direction: column;
+}
+.header__optionLineOne {
+  font-size: 10px;
+}
+.header__location--container {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.header__optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+.header__option--wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+.header__optinBasket {
+  display: flex;
+  align-items: center;
+}
+.header__BasketCount {
+  margin-inline: 10px;
+}

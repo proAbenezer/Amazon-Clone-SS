@@ -1,0 +1,31 @@
+.home {
+  max-width: 1500px;
+  margin-inline: auto;
+  padding: 0 40px;
+  background-color: rgb(234, 237, 237);
+}
+.home__image--banner {
+  width: 100%;
+
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(252, 212, 202, 1),
+    rgba(252, 212, 202, 0.1)
+  );
+  z-index: -1;
+  margin-bottom: -250px;
+}
+.home__row {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+}
+.home__loading--title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
